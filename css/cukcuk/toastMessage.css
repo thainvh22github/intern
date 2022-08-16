@@ -1,0 +1,265 @@
+
+.err{
+    display: none;
+}
+.message-warning{
+    height: 48px;
+    width: 250px;
+    border: none;
+    left: calc(100% - 260px);
+    top: calc(90% - 10px);
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    border-radius: 4px;
+    justify-content: space-around;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.icon-warrning{
+    width: 24px;
+    height: 24px;
+    background-image: url(../../asset/icon/warning.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.message{
+    color: #000000;
+    font-family: Regular;
+    margin-left: -15px;
+}
+.x{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    -webkit-mask: url(../../asset/icon/x.svg) no-repeat;
+    mask: url(../../asset/icon/x.svg) no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    cursor: pointer;
+    background-color: #ffcece;
+}
+
+
+
+
+.mess-email{
+    height: 60px;
+    width: 180px;
+    position: absolute;
+    left: 350px;
+    top: calc(90% - 70px);
+    background-color: #ff4747;
+    border-radius: 4px;
+    display: none;
+
+}
+.message-email{
+    
+    padding: 15px;
+    font-family: Regular;
+    color: white;
+   
+}
+.arow-email{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    transform: rotate(45deg);
+    margin-left: 50px;
+    margin-top: -15px;
+    background-color: #ff4747;
+
+}
+
+.mess-IdentityNumber{
+    height: 60px;
+    width: 180px;
+    position: absolute;
+    left: 350px;
+    top: 295px;
+    background-color: #ff4747;
+    border-radius: 4px;
+    display: none;
+}
+.message-IdentityNumber{
+    padding: 15px;
+    font-family: Regular;
+    color: white;
+}
+.arow-IdentityNumber{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    transform: rotate(45deg);
+    margin-left: 50px;
+    margin-top: -15px;
+    background-color: #ff4747;
+
+}
+
+.mess-numberPhone{
+    display: none;
+    height: 60px;
+    width: 180px;
+    position: absolute;
+    left: calc(100% - 250px);
+    top: 470px;
+    background-color: #ff4747;
+    border-radius: 4px;
+}
+.message-numberPhone{
+    padding: 15px;
+    font-family: Regular;
+    color: white;
+}
+.arow-numberPhone{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    transform: rotate(45deg);
+    margin-left: 50px;
+    margin-top: -15px;
+    background-color: #ff4747;
+
+}
+
+
+
+.mess-salary{
+    display: none;
+    height: 60px;
+    width: 180px;
+    position: absolute;
+    left: calc(100% - 250px);
+    top: calc(100% + 105px);
+    background-color: #ff4747;
+    border-radius: 4px;
+}
+.message-salary{
+    padding: 15px;
+    font-family: Regular;
+    color: white;
+}
+.arow-salary{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    transform: rotate(45deg);
+    margin-left: 50px;
+    margin-top: -15px;
+    background-color: #ff4747;
+
+}
+
+
+
+
+
+.warrning-delete{
+    display: none;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 100px);
+    background-color: white;
+    border-radius: 4px;
+}
+.header-toast{
+    height: 140px;
+    width: 100%;
+    display: flex;
+
+}
+.btn-warrning{
+    height: 60px;
+    width: 100%;
+    background-color: #e9ebee;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.message-warning-delete{
+    height: 100%;
+    width: calc(100% - 30px);
+}
+.message-close{
+    height: 30px;
+    width: 328px;
+    margin: 24px;
+    font-family: Bold;
+}
+.x-delete{
+    width: 24px;
+    height: 24px;
+    background-image: url(../../asset/icon/x.svg);
+    cursor: pointer;
+    margin: 3px;
+}
+.closeFormMessage:hover{
+    height: 30px;
+    width: 30px;
+    background-color: #e9ebee;
+    display: flex;
+}
+.question{
+    height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.icon-warrning{
+    width: 24px;
+    height: 24px;
+    background-image: url(../../asset/icon/warning.png);
+    margin-left: 24px;
+}
+.content-warrning{
+    height: 48px;
+    width: 300px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-close-msg{
+    height: 40px;
+    min-width: 100px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-close-msg:hover{
+    background-color: #bbbbbb;
+}
+.btn-delete-msg{
+    height: 40px;
+    min-width: 100px;
+    border: none;
+    background-color: #ff4747;
+    cursor: pointer;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.text-warrning-close{
+    align-items: center;
+    margin-left: 40px;
+}
+.text-warrning-delete{
+    align-items: center;
+    margin-left: 40px;
+    color: white;
+}
+.text-warrning{
+    font-family: regular;
+}

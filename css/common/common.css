@@ -1,0 +1,82 @@
+@import url(combobox.css);
+@import url(button.css);
+@import url(input.css);
+@import url(../employeeDetail/employeeDetail.css);
+
+@font-face {
+    font-family: Black;
+    src: url(../../asset/font/GoogleSans-Black.otf);
+}
+@font-face {
+    font-family: BlackItalic;
+    src: url(../../asset/font/GoogleSans-BlackItalic.otf);
+}
+@font-face {
+    font-family: Bold;
+    src: url(../../asset/font/GoogleSans-Bold.otf);
+}
+@font-face {
+    font-family: Italic;
+    src: url(../../asset/font/GoogleSans-Italic.otf);
+}
+@font-face {
+    font-family:Light ;
+    src: url(../../asset/font/GoogleSans-Light.otf);
+}
+@font-face {
+    font-family: LightItalic;
+    src: url(../../asset/font/GoogleSans-LightItalic.otf);
+}
+@font-face {
+    font-family: Medium;
+    src: url(../../asset/font/GoogleSans-Medium.otf);
+}
+@font-face {
+    font-family: MediumItalic;
+    src: url(../../asset/font/GoogleSans-MediumItalic.otf);
+}
+@font-face {
+    font-family: Regular;
+    src: url(../../asset/font/GoogleSans-Regular.otf);
+}
+@font-face {
+    font-family: Thin;
+    src: url(../../asset/font/GoogleSans-Thin.otf);
+}
+@font-face {
+    font-family: ThinItalic;
+    src: url(../../asset/font/GoogleSans-ThinItalic.otf);
+}
+body{
+    box-sizing: border-box;
+    font-size: 13px;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+
+.getId{
+    display: none;
+}
+
+.align-right{
+    text-align: right;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.align-left{
+    text-align: left;
+}
+
+table th,td{
+    min-width: 130px;
+    padding-left: 30px;
+
+}
+::-webkit-input-placeholder { /* Edge */
+    font-family: Regular;
+}

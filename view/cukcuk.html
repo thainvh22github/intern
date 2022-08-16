@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- thư viện -->
+    
+    <!-- file dùng chung -->
+    <link rel="stylesheet" href="../css/common/common.css">
+    <!-- file cho từng màn hình -->
+    <link rel="stylesheet" href="../css/cukcuk/cukcuk.css">
+
+
+    <title>cukcuk</title>
+</head>
+<body>
+    <!-- form thêm nhân viên -->
+    <div id="form-add-employee" ToastMessage="toastMessage" class="form-add-employee">
+        <!-- toast-message -->
+        <div class="msgEmail">
+            <div class="mess-email">
+                <div class="message-email">Sai định dạng (Example@domain.com)</div>
+                <div class="arow-email"></div>
+            </div>
+        </div>
+
+        <div class="msgIdentityNumber">
+            <div class="mess-IdentityNumber">
+                <div class="message-IdentityNumber">Số CMTND/ Căn cước chỉ bao gồm số</div>
+                <div class="arow-IdentityNumber"></div>
+            </div>
+        </div>
+        <div class="msgNumberPhone">
+            <div class="mess-numberPhone">
+                <div class="message-numberPhone">Số điện thoại chỉ bao gồm số</div>
+                <div class="arow-numberPhone"></div>
+            </div>
+        </div>
+        <div class="msgSalary">
+            <div class="mess-salary">
+                <div class="message-salary">Mức lương cơ bản chỉ bao gồm số</div>
+                <div class="arow-salary"></div>
+            </div>
+        </div>
+        <!-- toast-message -->
+
+
+        <div id="IDEmployeeEnd" class="header-employeeDetail">
+            <div class="title-form">
+                <span>THÔNG TIN NHÂN VIÊN</span>
+            </div>
+            <div id="icon-close-form" class="btn-close">
+                <div class="icon icon-close"></div>
+            </div>
+        </div>
+        <div class="body-form-add">
+            <div class="avatar-form-add">
+                <div class="avatar-default">
+                    <div class="icon-avatar-default"></div>
+                </div>
+                <div class="text-default">
+                    <div class="text-form-add ">
+                        (Vui lòng chọn ảnh có định dạng .jpg .jpeg .png .gif)
+                    </div>
+                </div>
+            </div>
+            <div id="employeeID" class="content-form-add">
+                <div class="form-emloyee-1 infomaition-text">
+                    A. THÔNG TIN CHUNG:
+                </div>
+                <div class="form-emloyee-1 line mt-4" ></div>
+                
+                <div class="form-emloyee employee-code-name mt-8">
+                    <div class="employee-code">
+                        <div class="text-form-add">Mã nhân viên <span style="color: red;">(*)</span></div>
+                        <input dataType="String" Required="true" PropName="employeesCode" id="employeesCode" class="input-form-add mt-4"></input>
+                    </div>
+                    <div class="employee-name">
+                        <div class="text-form-add">Họ và tên <span style="color: red;">(*)</span></div>
+                        <input dataType="Text" Required="true" PropName="employeesName" class="input-form-add mt-4" ></input>
+                    </div>
+                </div>
+
+                <div class="form-emloyee employee-dateofbirth-gender mt-24">
+                    <div class="employee-dateofbirth">
+                        <div class="text-form-add">Ngày sinh</div>
+                        <input dataType="Date" PropName="dateOfBirth" type="date"></input>
+                    </div>
+                    <div class="employee-gender">
+                        <div class="text-form-add">Giới tính</div>
+                        <div class="combobox-form mt-4">
+                            <div class="cbx">
+                                <input dataType="Enum" PropName="gender" id="genderValue" class="combobox-gender" readonly placeholder="Chọn thông tin"></input>
+                                <button id="btn-dropdown-gender" class="btn-dropdown">
+                                    <div class="icon-dropdown"></div>
+                                </button>
+                            </div>
+                            <div id="content-combobox-gender" class="content-combobox-gender">
+                                <option id="male" class="value-cbx-gender">Nam</option>
+                                <option id="female" class="value-cbx-gender">Nữ</option>
+                                <option id="other" class="value-cbx-gender">Khác</option>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-emloyee employee-IdentityNumber-IdentityDate mt-24">
+                    <div class="employee-IdentityNumber">
+                        <div class="text-form-add">Số CMTND/ Căn cước <span style="color: red;">(*)</span></div>
+                        <input dataType="Text" PropName="identityNumber" RequiredIdentityNumber="true" Required="true" class="input-form-add mt-4" ></input>
+                    </div>
+                    <div class="employee-IdentityDate">
+                        <div class="text-form-add">Ngày cấp</div>
+                        <input dataType="Date" PropName="identityIssuedDate" type="date"></input>
+                    </div>
+                </div>
+
+                <div class="form-emloyee-1 employee-IdentityPlace mt-24">
+                    <div class="employee-IdentityPlace">
+                        <div class="text-form-add">Nơi cấp</div>
+                        <input dataType="Text" PropName="identityIssuedPlace" class="input-form-add mt-4" ></input>
+                    </div>
+                    
+                </div>
+
+                <div class="form-emloyee employee-email-numberPhone mt-24">
+                    <div class="employee-email">
+                        <div class="text-form-add">Email <span style="color: red;">(*)</span></div>
+                        <input dataType="Text" RequiredEmail="true" PropName="email" Required="true" class="input-form-add mt-4" ></input>
+                    </div>
+                    <div class="employee-numberPhone">
+                        <div class="text-form-add">Số điện thoại <span style="color: red;">(*)</span></div>
+                        <input dataType="Text" RequiredNumberPhone="true" Required="true" PropName="phoneNumber" class="input-form-add mt-4"></input>
+                    </div>
+                </div>
+
+                <div class="form-emloyee-1 infomaition-text mt-24">
+                    B. THÔNG TIN CÔNG VIỆC:
+                </div>
+                <div class="form-emloyee-1 line mt-4"></div>
+                
+                <div class="form-emloyee employee-positions-deparments mt-24">
+                    <div class="employee-positions">
+                        <div class="text-form-add">Vị trí</div>
+                        <div class="combobox-form mt-4">
+                            <div class="cbx">
+                                <input dataType="Enum" PropName="positionsID" id="positionsValue" class="combobox-positions" readonly placeholder="Chọn thông tin"></input>
+                                <button id="btn-dropdown-positions" class="btn-dropdown">
+                                    <div class="icon-dropdown"></div>
+                                </button>
+                            </div>
+                            <div id="content-combobox-positions" class="content-combobox-positions">
+                                <option id="p1" class="value-cbx-positions">Trưởng phòng</option>
+                                <option id="p2" class="value-cbx-positions">Giám đốc sản xuất</option>
+                                <option id="p3" class="value-cbx-positions">Bảo vệ</option>
+                                <option id="p4" class="value-cbx-positions">Nhân viên tư vấn</option>
+                                <option id="p5" class="value-cbx-positions">Giám đốc tuyển dụng</option>
+                                <option id="p6" class="value-cbx-positions">Kế toán</option>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employee-numberPhone">
+                        <div class="text-form-add">Phòng ban</div>
+                        <div class="combobox-form mt-4">
+                            <div class="cbx">
+                                <input dataType="Enum" PropName="departmentsID" id="departmentsValue" class="combobox-departments" readonly placeholder="Chọn thông tin"></input>
+                                <button id="btn-dropdown-departments" class="btn-dropdown">
+                                    <div class="icon-dropdown"></div>
+                                </button>
+                            </div>
+                            <div id="content-combobox-departments" class="content-combobox-departments">
+                                <option id="d1" class="value-cbx-departments" value="1">Phòng kế toán</option>
+                                <option id="d2" class="value-cbx-departments" value="2">Phòng bảo vệ</option>
+                                <option id="d3" class="value-cbx-departments" value="3">Phòng hỗ trợ khách hàng</option>
+                                <option id="d4" class="value-cbx-departments" value="4">Phòng nhân sự</option>
+                                <option id="d5" class="value-cbx-departments" value="4">Phòng hành chính</option>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-emloyee-salaryTaxCode employee-taxCode-salary mt-24">
+                    <div class="employee-taxCode">
+                        <div class="text-form-add">Mã số thuế cá nhân</div>
+                        <input dataType="Text" RequiredSalary="true" PropName="taxCode" class="input-form-add mt-4" ></input>
+                    </div>
+                    <div class="employee-salary">
+                        <div class="text-form-add">Mức lương cơ bản</div>
+                        <div class="input-forms">
+                            <input id="salary" Salary="salary" dataType="Number" PropName="salary" class="input-form-salary mt-4" style="text-align: right;" ></input>
+                            <div class="text-salary">(VNĐ)</div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="form-emloyee employee-joinDate-workStatus mt-24">
+                    <div class="employee-joinDate">
+                        <div class="text-form-add">Ngày gia nhập công ty</div>
+                        <input dataType="Date" PropName="joinDate" type="date"></input>
+                    </div>
+                    <div class="employee-workStatus">
+                        <div class="text-form-add">Tình trạng làm việc</div>
+                        <div class="combobox-form mt-4">
+                            <div class="cbx">
+                                <input dataType="Enum" PropName="workStatus" id="workStatusValue" class="combobox-workStatus" readonly placeholder="Chọn thông tin"></input>
+                                <button id="btn-dropdown-workStatus" class="btn-dropdown">
+                                    <div class="icon-dropdown"></div>
+                                </button>
+                            </div>
+                            <div id="content-combobox-workStatus" class="content-combobox-workStatus">
+                                <option id="w1" class="value-cbx-workStatus">Chưa làm việc</option>
+                                <option id="w2" class="value-cbx-workStatus">Đang làm việc</option>
+                                <option id="w3" class="value-cbx-workStatus">Đã nghỉ việc</option>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="btn-end-form">
+            <button CommandType="Detroy" id="btn-detroy" class="btn-detroy">Hủy</button>
+            <button CommandType="Save" id="btn-save" class="button btn-save">
+                <div class="icon-btn-save"></div>
+                <div class="text-save">Lưu</div>
+            </button>
+        </div>
+    </div>
+    
+    <!-- hết form thêm nhân viên -->
+
+
+    <!-- Thông báo -->
+    <div id="toastMessage" class="toast-message">
+        <div class="err">
+            <div class="message-warning">
+                <div class="icon-warrning"></div>
+                <div class="message">Hãy nhập đầy đủ thông tin</div>
+                <div ButtonToast="closeFormMessage" class="x"></div>
+            </div>
+        </div>
+        
+        
+        <div class="warrning-delete">
+            <div class="header-toast">
+                <div class="message-warning-delete">
+                    <div class="message-close">Xóa bản ghi</div>
+                    <div class="question">
+                        <div class="icon-warrning"></div>
+                        <div class="content-warrning">
+                            <div class="contentA text-warrning">Bạn có chắc xóa thông tin của
+                                nhân viên này hay không?</div>
+                        </div>
+                    </div> 
+                    
+                </div> 
+                <div ButtonToast="closeFormMessage" class="closeFormMessage">
+                    <div class="x-delete"></div>
+                </div>
+            </div>
+            <div class="btn-warrning">
+                <div ButtonToast="closeFormMessage" class="btn-close-msg">
+                    <div class="text-warrning text-warrning-close">Hủy</div>
+                </div>
+                <div ButtonToast="deleteDone" class="btn-delete-msg">
+                    <div class="text-warrning text-warrning-delete">Xóa</div>
+                </div>
+                
+            </div>
+        </div>
+    
+    </div>
+
+        
+
+    
+
+<!-- hết thông báo -->
+
+    <div class="general-layout">
+        <!-- phần tiêu đề -->
+        <div class="content-left">
+            <div class="logo-header">
+                <div class="togger"></div>
+                <div class="logo-cukcuk"></div>
+            </div>
+            <div class="general-selection">
+                <div class="options option-overview">
+                    <div class="general-icons icon-overview"></div>
+                    <div class="text-options text-active">Tổng quan</div>
+                </div>
+                <div class="options option-report">
+                    <div class="general-icons icon-report"></div>
+                    <div class="text-options">Báo cáo</div>
+                </div>
+                <div class="options option-buy">
+                    <div class="general-icons icon-buy"></div>
+                    <div class="text-options">Mua hàng</div>
+                </div>
+                <div class="options option-employee">
+                    <div class="general-icons icon-employee"></div>
+                    <div class="text-options">Danh mục nhân viên</div>
+                </div>
+                <div class="options option-employee">
+                    <div class="general-icons icon-employee"></div>
+                    <div class="text-options">Danh mục nhân viên</div>
+                </div>
+                <div class="options option-setting">
+                    <div class="general-icons icon-setting"></div>
+                    <div class="text-options">Danh mục nhân viên</div>
+                </div>
+            </div>
+
+            <div class="open-option">
+                <div class="icon-open"></div>
+            </div>
+        </div>
+
+        <div class="content-rigth">
+            <div class="header">
+                <div class="combobox">
+                    <div class="cbx">
+                        <input id="combobox-header" class="combobox-header" readonly placeholder="Chọn thông tin"></input>
+                        <button id="btn-dropdown" class="btn-dropdown">
+                            <div class="icon-dropdown"></div>
+                        </button>
+                    </div>
+                    <div id="content-combobox-header" class="content-combobox-header">
+                        <option id="value-D" class="value-cbx-header" value="1">Nhà hàng biển Đông</option>
+                        <option id="value-T" class="value-cbx-header" value="2">Nhà hàng biển Tây</option>
+                        <option id="value-N" class="value-cbx-header" value="3">Nhà hàng biển Nam</option>
+                        <option id="value-B" class="value-cbx-header" value="4">Nhà hàng biển Bắc</option>
+                    </div>
+                </div>
+                
+
+
+
+                <div class="user-togger">
+                    <div class="avatar"></div>
+                    <div class="name">Nguyễn Vũ Hải Thái</div>
+                    <div class="avatar-togger"></div>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="header-content-body">
+                    <div class="title-body">Danh sách nhân viên</div>
+                    <button id="btn-add-employee" class="button btn-add-employee">
+                        <div class="icon-btn-add"></div>
+                        <div class="text-add">Thêm nhân viên</div>
+                    </button>
+                    
+                </div>
+                <div id="toolbar" class="wapper-content-body">
+                    <div class="search">
+                        <div class="icon-search"></div>
+                        <input Keypress="search" id="searchData" type="search" class="input input-search" placeholder="Tìm kiếm theo mã,Tên hoặc Số điện thoại"></input>
+                    </div>
+
+
+                    <div class="combobox">
+                        <div class="cbx">
+                            <input id="combobox-department" class="combobox-header" readonly placeholder="Chọn thông tin"></input>
+                            <button id="btn-dropdown-department-search" class="btn-dropdown">
+                                <div class="icon-dropdown"></div>
+                            </button>
+                        </div>
+                        <div ButtonName="searchFromDepartmentID" id="page-combobox-department" class="content-combobox-header">
+                            <option id="sd1" class="value-cbx-departments">Phòng kế toán</option>
+                            <option id="sd2" class="value-cbx-departments">Phòng bảo vệ</option>
+                            <option id="sd3" class="value-cbx-departments">Phòng hỗ trợ khách hàng</option>
+                            <option id="sd4" class="value-cbx-departments">Phòng nhân sự</option>
+                            <option id="sd5" class="value-cbx-departments">Phòng hành chính</option>
+                        </div>
+                    </div>
+
+                    
+                    <div class="combobox">
+                        <div class="cbx">
+                            <input id="combobox-positions" class="combobox-header" readonly placeholder="Chọn thông tin"></input>
+                            <button id="btn-dropdown-positions-search" class="btn-dropdown">
+                                <div class="icon-dropdown"></div>
+                            </button>
+                        </div>
+                        <div ButtonName="searchFromPositionID" id="page-combobox-positions" class="content-combobox-header">
+                            <option id="sp1" class="value-cbx-positions">Trưởng phòng</option>
+                            <option id="sp2" class="value-cbx-positions">Giám đốc sản xuất</option>
+                            <option id="sp3" class="value-cbx-positions">Bảo vệ</option>
+                            <option id="sp4" class="value-cbx-positions">Nhân viên tư vấn</option>
+                            <option id="sp5" class="value-cbx-positions">Giám đốc tuyển dụng</option>
+                            <option id="sp6" class="value-cbx-positions">Kế toán</option>
+                        </div>
+                    </div>
+                    <div class="tool-bar">
+                        <div class="ic">
+                            <div ButtonName="delete" class="icon-body icon-delete"></div>
+                        </div>
+                        <div class="ic">
+                            <div ButtonName="duplicate" class="icon-body icon-duplicate"></div>
+                        </div>
+                        <div class="ic">
+                            <div ButtonName="refresh" class="icon-body icon-refresh"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-content">
+                    <div id="gridEmployee" PageNavi="pagenavi" ToolBar="toolbar" ItemId="EmployeesID" class="data-table">
+                        <div class="column" style="display: none;">
+                            <div class="col" FieldName="employeesID" DataType="GetID"></div>
+                            <div class="col" FieldName="employeesCode" DataType="Text" >Mã nhân viên</div>
+                            <div class="col" FieldName="employeesName" DataType="Text">Tên nhân viên</div>
+                            <div class="col" FieldName="gender" DataType="Enum">Giới tính</div>
+                            <div class="col" FieldName="dateOfBirth" DataType="Date">Ngày sinh</div>
+                            <div class="col" FieldName="phoneNumber" DataType="Text">Điện thoại</div>
+                            <div class="col" FieldName="email" DataType="Text">Email</div>
+                            <div class="col" FieldName="positionsID" DataType="Enum">Chức vụ</div>
+                            <div class="col" FieldName="departmentsID" DataType="Enum">Phòng ban</div>
+                            <div class="col" FieldName="salary" DataType="Number">Mức lương cơ bản</div>
+                            <div class="col" FieldName="workStatus" DataType="Enum">Tình trạng công việc</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="pagenavi" class="page-navi">
+                    <div class="start-page">
+                        <span>Hiển thị 1-10/1000 nhân viên</span>
+                    </div>
+                    <div id="getSkip" class="skip-page">
+                        <div IconBtn="startpage" class="icon-page-navi">
+                            <div class="icon-startpage"></div>
+                        </div>
+                        <div IconBtn="backonestep" class="icon-page-navi">
+                            <div class="icon-backonestep"></div>
+                        </div>
+                        <div IconBtn="page1" class="icon-page-navi active">
+                            <span>1</span>
+                        </div>
+                        <div IconBtn="page2" class="icon-page-navi">
+                            <span>2</span>
+                        </div>
+                        <div IconBtn="page3" class="icon-page-navi">
+                            <span>3</span>
+                        </div>
+                        <div IconBtn="page4" class="icon-page-navi">
+                            <span>4</span>
+                        </div>
+                        <div  IconBtn="nextonestep" class="icon-page-navi">
+                            <div class="icon-nextonestep"></div>
+                        </div>
+                        <div id="maxSkip" IconBtn="endpage" class="icon-page-navi">
+                            <div class="icon-endpage"></div>
+                        </div>
+                    </div>
+
+                    <div class="end-page">
+                        <span>10 nhân viên/trang</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- thư viện -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/common/jquery-3.6.0.min.js"></script>
+    <!-- file dùng chung -->
+    <script src="../js/common/common.js"></script>
+    <script src="../js/common/Enumeration.js"></script>
+    <script src="../js/common/Resource.js"></script>
+    <script src="../js/common/Department.js"></script>
+    <script src="../js/common/Gender.js"></script>
+    <script src="../js/common/Positions.js"></script>
+    <script src="../js/common/WorkStatus.js"></script>
+
+
+    <!-- file cho từng màn hình -->
+    <script src="../js/employeeDetail/combobox.js"></script>
+    <script src="../js/employeeDetail/employeeDetail.js"></script>
+    <script src="../js/employeeDetail/employeePage.js"></script>
+
+</body>
+</html>

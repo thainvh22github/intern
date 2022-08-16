@@ -1,0 +1,230 @@
+.header-content-body{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-body{
+    font-size: 20px;
+    font-family: medium;
+    margin: 16px 0 0 16px;
+}
+.btn-add-employee{
+    display: flex;
+    align-items: center;
+}
+.icon-btn-add{
+    margin-left: 16px;
+    height: 16px;
+    width: 16px;
+    background-image: url(../../asset/icon/add.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.text-add{
+    font-family: Regular;
+    font-size: 13px;
+    color: #ffffff;
+    margin: 0 16px 0 8px;
+}
+/* --- */
+.wapper-content-body{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+.search{
+    display: flex;
+    align-items: center;
+
+}
+.icon-search{
+    width: 16px;
+    height: 16px;
+    background-image: url(../../asset/icon/search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateX(32px);
+    
+}
+
+.input-search{
+    width: 320px;
+    outline: none;
+    padding-left: 40px;
+}
+
+.cbx-deparment{
+    margin-left: 25px;
+}
+
+.cbx-positions{
+    margin-left: 25px;
+}
+
+.ic{
+    border: #e9ebee 1px solid;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+}
+.icon-body{
+    width: 24px;
+    height: 24px;
+    margin-left: 2px;
+}
+.icon-delete{
+    width: 20px;
+    height: 20px;
+    background-image: url(../../asset/icon/delete.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+    
+}
+.icon-duplicate{
+    width: 20px;
+    height: 20px;
+    background-image: url(../../asset/icon/duplicate.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+
+}
+.icon-refresh{
+    width: 20px;
+    height: 20px;
+    background-image: url(../../asset/icon/refresh.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+.tool-bar{
+    width: 100px;
+    display: flex;
+    height: 40px;
+    transform: translateX(130px) translateY(-5px);
+
+}
+/* --- */
+.table-content{
+    height: calc(100% - 48px - 48px - 48px);
+    width: 95%;
+    height: 73%;
+    overflow-y: scroll;
+    margin: 15px 10px 0 10px;
+}
+table{
+    width: 120%;
+    cursor: pointer;
+    border-collapse: collapse;
+}
+tr>th{
+    height: 40px;
+    background-color: white;
+    border-bottom: 1px #bbbbbb solid;
+}
+tr>td{
+    height: 40px;
+    border-bottom: 2px #bbbbbb solid;
+}
+
+table tr:nth-child(odd){
+    background-color:#eee;
+}
+table tr:nth-child(even){
+    background-color:white;
+}
+.color-tr:nth-child(odd){
+    background-color:#bbbbbb;
+}
+.color-tr:nth-child(even){
+    background-color:#bbbbbb;
+}
+table tr:nth-child(odd){
+    background-color:#eee;
+}
+
+
+
+
+
+
+
+
+/* ... */
+.page-navi{
+    width: 95%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skip-page{
+    display: flex;
+
+}
+.icon-startpage{
+    width: 24px;
+    height: 24px;
+    background-image: url(../../asset/icon/btn-firstpage.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon-backonestep{
+    width: 24px;
+    height: 24px;
+    background-image: url(../../asset/icon/btn-prev-page.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon-nextonestep{
+    width: 24px;
+    height: 24px;
+    background-image: url(../../asset/icon/btn-next-page.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon-endpage{
+    width: 24px;
+    height: 24px;
+    background-image: url(../../asset/icon/btn-lastpage.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon-page-navi{
+    border: #bbbbbb 1px solid;
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+    margin-left: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: #e9ebee;
+    
+}
+
+.icon-page-navi:hover{
+    border: #019160 1px solid;
+    background-color: #ffffff;
+    color: black;
+    
+}
+.icon-page-navi span{
+    margin-left: 14px;
+}
+.icon-page-navi div{
+    margin-left: 6px;
+}
+.active{
+    background-color: #019160;
+    color: #ffffff;
+}

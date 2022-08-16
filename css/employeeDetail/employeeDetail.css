@@ -1,0 +1,372 @@
+.mt-4{
+    margin-top: 4px;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.mt-24{
+    margin-top: 24px;
+}
+
+
+
+.text-add{
+
+}
+.form-add-employee{
+    width: 1000px;
+    height: 600px;
+    margin-left: calc(50% - 500px);
+    overflow-y: scroll;
+    border: 1px black solid;
+    position: absolute;
+    background-color: white;
+    display: none;
+}
+
+.header-employeeDetail{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.title-form{
+    width: 350px;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 15px;
+}
+.title-form span{
+    font-size: 28px;
+    font-family: medium;
+}
+.icon-close{
+    height: 24px;
+    width: 24px;
+    background-image: url(../../asset/icon/);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 8px;
+
+}
+.btn-close{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.btn-close:hover{
+    background-color: #e9ebee;
+}
+.body-form-add{
+    width: 100%;
+    display: flex;
+
+}
+.avatar-form-add{
+    width: 267px;
+    height: 100%;
+    
+}
+.avatar-default{
+    width: 267px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+}
+.icon-avatar-default{
+    width: 200px;
+    height: 200px;
+    margin-left: 33px;
+    background-image: url(../../asset/img/default-avatar.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+    border: 1px black solid;
+
+
+}
+
+.content-form-add{
+    width: calc(100% - 267px);
+    height: 100%;
+    margin-left: -20px;
+
+}
+.infomaition-text{
+    font-family: medium;
+    font-size: 20px;
+    
+}
+.line{
+    
+    width: 120px;
+    border: 3px #019160 solid;
+
+
+}
+
+.text-default{
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    margin-left: 35px;
+}
+
+.text-form-add{
+    font-family: Regular;
+}
+.input-form-add{
+    height: 40px;
+    width: 260px;
+    border: 1px #bbbbbb solid;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    padding-left: 20px;
+}
+.input-forms{
+    display: flex;
+    align-items: center;   
+}
+.input-form-salary{
+    height: 40px;
+    width: 225px;
+    border: 1px #bbbbbb solid;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    padding-right: 55px;
+    
+}
+.employee-salary{
+    margin-left: 75px;
+}
+.text-salary{
+    transform: translateX(-50px) translateY(3px);
+    font-family: Italic;
+}
+.input-form-add:hover{
+    border: 1px #019160 solid;
+    
+}
+.input-form-salary:hover{
+    border: 1px #019160 solid;
+
+}
+.form-emloyee{
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.form-emloyee-salaryTaxCode{
+    height: 64px;
+    width: 96%;
+    display: flex;
+    margin-left: 37px;
+}
+.form-emloyee-1{
+    margin-left: 35px;  
+}
+
+
+.employee-code{
+    height: 64px;
+    width: 40%;
+}
+.employee-name{
+    height: 64px;
+    width: 40%;
+
+}
+
+.btn-save{
+    display: flex;
+    align-items: center;
+    margin-right: 55px;
+}
+.icon-btn-save{
+    margin-left: 16px;
+    height: 16px;
+    width: 16px;
+    background-image: url(../../asset/icon/save-32.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.text-save{
+    font-family: Regular;
+    font-size: 13px;
+    color: #ffffff;
+    margin: 0 16px 0 8px;
+}
+.btn-detroy{
+    height: 40px;
+    min-width: 100px;
+    border: none;
+    background-color: #e9ebee;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-family: Regular;
+
+}
+.btn-detroy:hover{
+    background-color: #bbbbbb;
+}
+.btn-end-form{
+    margin-top: 30px;
+    height: 70px;
+    width: 100%;
+    background-color: #e9ebee;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+
+.combobox-form{
+    height: 40px;
+    min-width: 280px;
+    border-radius: 4px;
+    border: 1px #bbbbbb solid;
+    border-collapse: collapse;
+
+}
+.combobox-form:hover{
+    border: 1px #019160 solid;
+}
+.cbx{
+    justify-content: space-between;
+    display: flex;
+}
+
+.combobox-gender{
+    border: none;
+    outline: none;
+    margin-left: 16px;
+    font-family: Regular;
+}
+.content-combobox-gender{
+    background-color: #ffffff;
+    width: 280px;
+    position: absolute;
+    display: none;
+}
+.value-cbx-gender{
+    border: 1px #bbbbbb solid;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    font-family: Regular;
+}
+.value-cbx-gender:hover{
+    background-color: #e9ebee;
+}
+
+
+
+
+.combobox-positions{
+    border: none;
+    outline: none;
+    margin-left: 16px;
+    font-family: Regular;
+}
+.content-combobox-positions{
+    background-color: #ffffff;
+    width: 280px;
+   position: absolute;
+   display: none;
+}
+.value-cbx-positions{
+    border: 1px #bbbbbb solid;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    font-family: Regular;
+}
+.value-cbx-positions:hover{
+    background-color: #e9ebee;
+}
+
+
+
+
+
+
+.combobox-departments{
+    border: none;
+    outline: none;
+    margin-left: 16px;
+    font-family: Regular;
+}
+.content-combobox-departments{
+    background-color: #ffffff;
+    width: 280px;
+    position: absolute;
+    display: none;
+}
+.value-cbx-departments{
+    border: 1px #bbbbbb solid;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    font-family: Regular;
+}
+.value-cbx-departments:hover{
+    background-color: #e9ebee;
+}
+
+
+
+
+
+
+
+.combobox-workStatus
+{
+    border: none;
+    outline: none;
+    margin-left: 16px;
+    font-family: Regular;
+}
+.content-combobox-workStatus
+{
+    background-color: #ffffff;
+    width: 280px;
+    position: absolute;
+    display: none;
+}
+.value-cbx-workStatus
+{
+    border: 1px #bbbbbb solid;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    font-family: Regular;
+}
+.value-cbx-workStatus:hover{
+    background-color: #e9ebee;
+}
+.require-control{
+    border: red 1px solid;
+}
